@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx}\" \"*.{js,json,md}\"",
+    "lint": "eslint .",
     "test": "jest",
     "test-all": "npm run lint && npm run type-check && npm run test"
   },
