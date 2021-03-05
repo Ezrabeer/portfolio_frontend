@@ -21,42 +21,43 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Open Sans', sans-serif;
-    color: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.colors.text};
     font-style: normal;
     font-weight: normal;
     font-size: ${({ theme }) => theme.fontSizes[0]};
     line-height: ${({ theme }) => theme.lineHeights[2]};
     margin: 0;
-    background: #f3f3f3;
+    background: ${({ theme }) => theme.colors.body};
+    transition: all 0.5s;
     overflow-anchor: none;
   }
-  
+
   img, svg {
     max-width: 100%;
   }
-  
+
   figure {
     margin: 0;
   }
-  
+
   p {
     margin-top: 0;
   }
-  
+
   button::-moz-focus-inner {
     border: 0;
   }
-  
+
   [tabindex='-1'] {
     outline: none;
   }
-  
+
   @media (prefers-reduced-motion) {
     * {
       transition: none !important;
       transition-duration: 0s !important;
     }
-    
+
     html {
       scroll-behavior: auto;
     }

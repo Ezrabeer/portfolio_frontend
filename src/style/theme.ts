@@ -52,9 +52,15 @@ const mediaQueries = {
   xl: `screen and (min-width: ${breakpoints[4]})`,
 } as const;
 
-export const colors = {
-  body: '#000000',
+export const darkColors = {
+  body: '#353535',
+  text: '#fff',
 } as const;
+
+export const lightColors = {
+  body: '#fff',
+  text: '#000',
+};
 
 const sizes = {
   maxWidth: 1400,
@@ -70,11 +76,21 @@ const theme = {
   breakpoints,
   mediaQueries,
   space,
-  colors,
   sizes,
 } as const;
 
-type Theme = typeof theme;
+export const lightTheme = {
+  ...theme,
+  colors: lightColors,
+} as const;
+
+export const darkTheme = {
+  ...theme,
+  colors: darkColors,
+} as const;
+
+type Theme1 = typeof lightTheme;
+type Theme2 = typeof darkTheme;
 
 export default theme;
 
@@ -83,5 +99,5 @@ export default theme;
  */
 declare module 'styled-components' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  export interface DefaultTheme extends Theme {}
+  export interface DefaultTheme extends Theme1, Theme2 {}
 }

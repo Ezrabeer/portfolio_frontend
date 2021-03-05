@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import css from '@styled-system/css';
 import {
   BorderProps,
   borders,
@@ -35,11 +36,11 @@ export type BoxProps = SpaceProps &
 
 export const Box = styled.div.withConfig({
   shouldForwardProp: styledShouldForwardProp,
-})(
-  {
+})<BoxProps>(
+  css({
     boxSizing: 'border-box',
     minWidth: 0,
-  },
+  }),
   space,
   spacing,
   layout,
