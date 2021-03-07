@@ -25,11 +25,14 @@
     ]
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
     "@styled-system/css": "^5.1.5",
     "@types/styled-components": "^5.1.7",
+    "axios": "^0.21.1",
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-redux": "^7.2.2",
     "styled-components": "^5.2.1",
     "styled-system": "^5.1.5"
   },
@@ -39,6 +42,7 @@
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
+    "@types/react-redux": "^7.1.16",
     "@types/styled-system": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",

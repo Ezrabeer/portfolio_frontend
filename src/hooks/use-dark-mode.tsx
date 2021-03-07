@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import {
   isLocalStorageDefined,
   LocalStorageTypes,
-} from '@/utils/localStorageHelpers';
+} from '@/utils/local-storage-helpers';
 
 type ThemeState = 'light' | 'dark';
 

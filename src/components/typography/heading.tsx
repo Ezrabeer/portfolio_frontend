@@ -28,12 +28,12 @@ export interface HeadingProps extends StyledHeadingProps {
 }
 
 const levelStyles: Record<HeadingLevel, ReturnType<typeof css>> = {
-  1: css({ fontSize: '2rem', mb: 4 }),
-  2: css({ fontSize: '1.5rem', mb: 4 }),
-  3: css({ fontSize: '1.17rem', mb: 3 }),
-  4: css({ fontSize: 0, mb: 3 }),
-  5: css({ fontSize: '0.83rem', mb: 3 }),
-  6: css({ fontSize: '0.75rem', mb: 3 }),
+  1: css({ fontSize: '5rem', mb: 4 }),
+  2: css({ fontSize: '4rem', mb: 4 }),
+  3: css({ fontSize: '3rem', mb: 3 }),
+  4: css({ fontSize: '2rem', mb: 3 }),
+  5: css({ fontSize: '1.75rem', mb: 3 }),
+  6: css({ fontSize: '1.5rem', mb: 3 }),
 };
 
 export const Heading = styled.h1
